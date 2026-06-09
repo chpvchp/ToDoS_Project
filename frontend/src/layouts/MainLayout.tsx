@@ -5,14 +5,14 @@ import Nav from "../components/Nav";
 
 export default function MainLayout() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
       <Nav />
 
-      <main>
+      <main className="flex-1">
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
