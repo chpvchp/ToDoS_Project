@@ -23,7 +23,7 @@ export const useTodo = () => {
 
   // Delete
   const removeTodo = async (id: number) => {
-    const data = await deleteTodo(id);
+    await deleteTodo(id);
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
   };
 
