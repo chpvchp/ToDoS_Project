@@ -35,7 +35,7 @@ export const useTodo = () => {
 
   useEffect(() => {
     getListTodo();
-  });
+  }, []);
 
   return {
     todos,
