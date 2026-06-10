@@ -1,4 +1,5 @@
 import CardInput from "../components/CardInput";
+import CardTodo from "../components/CardTodo";
 
 export default function TodoPage() {
   return (
@@ -10,6 +11,10 @@ export default function TodoPage() {
       <p className="mt-2 italic">--- List Todo ---</p>
 
       <div>
+        <CardTodo
+          title="React"
+        />
+
 
       </div>
 
