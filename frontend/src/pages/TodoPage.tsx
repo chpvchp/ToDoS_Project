@@ -7,11 +7,9 @@ export default function TodoPage() {
   const [title, setTitle] = useState("");
   const {
     todos,
-    getListTodo,
     createTodo,
     removeTodo,
     editTodo,
-    refetch
   } = useTodo();
 
   return (
