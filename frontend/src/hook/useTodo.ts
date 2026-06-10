@@ -17,6 +17,7 @@ export const useTodo = () => {
 
   // Post
   const createTodo = async (title: string) => {
+    if (!title.trim()) return;
     const data = await postTodo(title);
     setTodos((prev) => [...prev, data])
   };
